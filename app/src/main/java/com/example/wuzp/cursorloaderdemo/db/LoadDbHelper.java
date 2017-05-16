@@ -12,7 +12,8 @@ public class LoadDbHelper extends SQLiteOpenHelper {
     public static final int    DB_VERSION = 1;       //数据库的版本
     public static final String TABLE_NAME_READER = "reader";//表的名字
 
-    public static final String READER_COLUMN_ID = "_id";
+    public static final String READER_COLUMN_ID = "_id";//系统自带的id
+    public static final String READER_COLUMN_UID = "uid";
     public static final String READER_COLUMN_SUMMARY = "summary";
     public static final String READER_COLUMN_DESCRIPTION = "description";
 
@@ -20,6 +21,7 @@ public class LoadDbHelper extends SQLiteOpenHelper {
             + TABLE_NAME_READER
             + "("
             + READER_COLUMN_ID + " integer primary key autoincrement, "
+            + READER_COLUMN_UID + " text not null,"
             + READER_COLUMN_SUMMARY + " text not null,"
             + READER_COLUMN_DESCRIPTION
             + " text not null"

@@ -2,4 +2,6 @@
 
  ###Cursorloader 
  ###ContentProvider
- ###SqliteOpenHelper 
+ ###SqliteOpenHelper
+
+ ### 在Dev分支上 处理Cursorloader改为数据从本地查询处理。比较两者的执行速度。
